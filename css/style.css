@@ -313,6 +313,8 @@ section{scroll-margin-top:var(--header-h)}
 .f-phone{background:#28a745;animation:ring 1.4s infinite}
 .f-zalo{background:#fff;border:1px solid #dfe9e7}
 .f-zalo img{height:34px}
+.f-fb{background:#1877F2}
+.f-fb img{height:24px;filter:brightness(0) invert(1)}
 @keyframes ring{0%,100%{transform:rotate(0)}10%,30%{transform:rotate(-12deg)}20%,40%{transform:rotate(12deg)}}
 .to-top{background:var(--teal-dark);opacity:0;pointer-events:none;transition:.3s}
 .to-top.show{opacity:1;pointer-events:auto}
