@@ -57,6 +57,14 @@
   setupTabs('#floorTabs', 'data-pane');
   setupTabs('#libTabs', 'data-lib');
 
+  /* ---- Nút "Xem thiết kế căn hộ": cuộn xuống THƯ VIỆN + mở tab thiết kế ---- */
+  window.goDesign = function () {
+    var t = document.querySelector('#libTabs .tab[data-lib="lib-design"]');
+    if (t) t.click();
+    var s = document.getElementById('library');
+    if (s) s.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   /* ---- Video lightbox ---- */
   var lb = document.getElementById('lightbox');
   var lbFrame = document.getElementById('lbFrame');
